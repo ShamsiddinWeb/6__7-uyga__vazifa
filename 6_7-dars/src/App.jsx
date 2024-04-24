@@ -8,6 +8,7 @@ import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Blog from "./pages/Blog/Blog";
 import Product from "./pages/Product/Product";
+import Single from "./pages/Single-router/Single";
 import Careers from "./pages/Careers/Careers";
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
     },
     {
       id: 5,
-      link: "/Product",
+      link: "/product",
       title: "Product",
     },
   ];
@@ -97,7 +98,8 @@ function App() {
         <Route path="/abaut" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/Product" element={<Product />} />
+        <Route path="/product" element={<Product />} />
+        <Route path='/product/:id' element={<Single/>}/>
         <Route path="/careers" element={<Careers />} />
       </Routes>
     </div>

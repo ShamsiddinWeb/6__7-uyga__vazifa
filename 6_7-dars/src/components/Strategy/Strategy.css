@@ -1,0 +1,91 @@
+.strategy {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  padding-right: 40px;
+}
+.strategy__start {
+  background-color: #edf7ff;
+  padding: 48px;
+  border-radius: 25px;
+  position: relative;
+}
+.strategy__ribbon {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+.strategy__group {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  justify-content: space-between;
+}
+.strategy__img {
+  width: 472px;
+}
+.strategy__card {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.strategy__btn {
+  padding: 8px 24px;
+  background-color: transparent;
+  border: 1px solid rgb(176, 176, 174);
+  border-radius: 20px;
+  color: #b7b9bb;
+}
+.strategy__btn:hover {
+  color: #F58A07;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.strategy__title {
+  max-width: 602px; 
+  font-size: 48px;
+  margin: 0;
+}
+.strategy__text {
+  max-width: 370px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1070px)  {
+  .strategy__title {
+    font-size: 35px;
+  }
+  .strategy__img {
+   width: 400px;
+  }
+}
+@media only screen and (max-width: 900px)  {
+  .strategy__title {
+    font-size: 28px;
+  }
+  .strategy__img {
+   width: 300px;
+  }
+}
+@media only screen and (max-width: 750px)  {
+  .strategy__title {
+    font-size: 38px;
+  }
+  .strategy__img {
+   width: 100%;
+  }
+  .strategy__group {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media only screen and (max-width: 400px)  {
+  .strategy__title {
+    font-size: 25px;
+  }
+  .strategy__ribbon {
+    display: none;
+  }
+  .strategy__text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,25 @@
+.Sectors {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-right: 40px;
+}
+.Sectors__title {
+  max-width: 735px;
+  margin: 0;
+}
+.Sectors__text {
+  max-width: 630px;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 570px) {
+  .Sectors__text {
+    max-width: 630px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

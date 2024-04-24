@@ -44,6 +44,7 @@
 } 
 .projct.active .news {
   background-color: black;
+  color: #fff;
 }
 .projct.active .news__list-item {
   background-color: rgb(14, 12, 12);
@@ -72,6 +73,47 @@
 }
 .projct.active .products {
   background-color: black;
+  color: #fff;
+}
+.projct.active .Sectors{
+  background-color: black;
+  color: #fff;
+}
+.projct.active .energy {
+  background-color: black;
+  color: #fff;
+}
+.projct.active .software {
+  background-color: black;
+  color: #ffffff;
+}
+.projct.active .software__list-item {
+  background-color: #1d1b1b;
+}
+.projct.active .strategy {
+  background-color: #000000;
+  color: #fff;
+}
+.projct.active .strategy__start {
+  background-color: #363535;
+}
+.projct.active .combined {
+  background-color: #000000;
+}
+.projct.active .finsweet {
+  background-color: #000000;
+  color: #fff;
+}
+.projct.active .singleRoute {
+  background-color: #000000;
+  color: #fff;
+}
+.projct.active .Identification {
+  background-color: #000000;
+  color: #fff;
+}
+.projct.active .Teamwork{
+  background-color: #000000;
   color: #fff;
 }
 @media only screen and (max-width: 845px) {

@@ -11,6 +11,7 @@
 .header__start {
   display: flex;
   align-items: center;
+  gap: 5px;
   justify-content: space-between;
 }
 .header__list {
@@ -104,7 +105,7 @@
   .header__nav {
     position: absolute;
     flex-direction: column;
-    top: 98px;
+    top: 96px;
     left: -350px;
     background-color: #74c2ec;
     align-items: start;

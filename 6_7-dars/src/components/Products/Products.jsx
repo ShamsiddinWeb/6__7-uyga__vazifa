@@ -3,9 +3,10 @@ import axios from "axios";
 import "./Products.css";
 import { BsCart3 } from "react-icons/bs";
 import "./loading.css";
+import { Link } from "react-router-dom";
 
 function Products() {
-  const API__URL = "https://fakestoreapi.com/products";
+  const API__URL = "https://dummyjson.com/products";
   const [data, setData] = useState([]);
   const [loading, setloading] = useState(false);
 
@@ -13,7 +14,7 @@ function Products() {
     setloading(true);
     axios
       .get(API__URL)
-      .then((res) => setData(res.data))
+      .then((res) => setData(res.data.products))
       .catch((err) => console.log(err))
       .finally(() => setloading(false));
   }, []);
@@ -22,16 +23,18 @@ function Products() {
     <li key={pro.id} className="products__list-item">
       <button className="btn">yangi</button>
       <div className="imges">
-        <img className="products__list-img" src={pro.image} alt="" />
+        <Link to={`/product/${pro.id}`}>
+          <img className="products__list-img" src={pro.images[0]} alt="" />
+        </Link>
       </div>
       <h5 className="products__list-title">{pro.title}</h5>
       <p className="products__list-text">{pro.description}</p>
-      <img src="" alt="" /> <span className="span">({pro.rating.rate})</span>
-      <p className="category">By: {pro.category} <span>${pro.price} </span></p>
+      <img src="" alt="" /> <span className="span">({pro.rating})</span>
+      <p className="category">
+        By: {pro.category} <span>${pro.price} </span>
+      </p>
       <div className="products__list-card">
-        <button className="products__list-btn">
-          savatga qo'shish
-        </button>
+        <button className="products__list-btn">savatga qo'shish</button>
       </div>
     </li>
   ));
